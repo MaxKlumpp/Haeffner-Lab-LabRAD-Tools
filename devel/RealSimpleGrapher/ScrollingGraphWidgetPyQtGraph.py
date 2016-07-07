@@ -29,9 +29,8 @@ class ScrollingGraph_PyQtGraph(Graph):
             window_width = xmax_cur - xmin_cur
             # scroll if we've reached 75% of the window
             if (x_cur > (xmin_cur + 0.75*window_width) and (x_cur < xmax_cur)):
-                shift = (xmax_cur - xmin_cur)/2.0
-                xmin = xmin_cur + shift
-                xmax = xmax_cur + shift
+                xmin = x_cur - 0.75*window_width
+                xmax = xmin + window_width
                 self.set_xlimits( [xmin, xmax] )
         except:
             pass
