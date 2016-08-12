@@ -31,34 +31,9 @@ class gridGraphConfig():
 
 
 tabs =[
-    gridGraphConfig('current', [graphConfig('current', max_datasets = 1, show_points = False), 0, 0]),
     gridGraphConfig('pmt', [graphConfig('pmt', ylim=[0,30], isScrolling=True, max_datasets = 1, show_points = False, grid_on = True), 0, 0]),
-    gridGraphConfig('spectrum', [graphConfig('spectrum'), 0, 0]),
-    gridGraphConfig('rabi', [graphConfig('rabi'), 0, 0]),
-    gridGraphConfig('calibrations', [
-                      graphConfig('car1'), 0, 0,
-                      graphConfig('car2'), 0, 1,                      
-                      graphConfig('radial1'), 1, 0,
-                      graphConfig('radial2'), 1, 1]),
-    gridGraphConfig('molmer-sorensen',[
-                      graphConfig('ms_time'), 0, 0,
-                      graphConfig('local_stark'), 0, 1]),
-
-    gridGraphConfig('vaet',[
-                      graphConfig('vaet_time'), 0, 0,
-                      graphConfig('vaet_delta'), 0, 1]),
-    gridGraphConfig('parity', [graphConfig('parity'), 0, 0]),
-    gridGraphConfig('ramsey', [graphConfig('ramsey'), 0, 0])
+    gridGraphConfig('current', [graphConfig('current', max_datasets = 1, show_points = False), 0, 0]),
+    gridGraphConfig('spectrum', [graphConfig('spectrum', show_points=False), 0, 0]),
+    gridGraphConfig('tickle', [graphConfig('tickle', show_points=False), 0, 0])
 ]
 
-#    gridGraphConfig('testgrid',
-#        [
-#            graphConfig('fig1'), 0, 0,
-#            graphConfig('fig2'), 0, 1,
-#            graphConfig('fig3'), 2, 2,
-#            graphConfig('fig4'), 1, 2
-#        ]),
-#    gridGraphConfig('testgrid2',
-#        [
-#            graphConfig('fig1123'), 0, 0,
-#        ])
